@@ -113,21 +113,22 @@ def make_model(src_vocab, tgt_vocab, N = 6, d_model = 512, d_ff = 2048, h = 8, d
             nn.init.xavier_uniform(p)
     return model
 
+
 if __name__ == '__main__':
-    x = torch.tensor([[
-                          [1, 2, 3], 
-                          [4, 5, 6]
-                       ], 
-                      [
-                          [2, 3, 4], 
-                          [5, 6, 7]
-                        ], 
-                      [
-                          [3, 4, 5], 
-                          [6, 7, 8]
-                        ]],
-                        dtype = torch.float32)
-    print(x.size())
+    # x = torch.tensor([[
+    #                       [1, 2, 3], 
+    #                       [4, 5, 6]
+    #                    ], 
+    #                   [
+    #                       [2, 3, 4], 
+    #                       [5, 6, 7]
+    #                     ], 
+    #                   [
+    #                       [3, 4, 5], 
+    #                       [6, 7, 8]
+    #                     ]],
+    #                     dtype = torch.float32)
+    # print(x.size())
  
-    print('softmax: ', F.softmax(x, dim = -1))
-    print('log_softmax: ', F.log_softmax(x, dim = -1))
+    # print('softmax: ', F.softmax(x, dim = -1))
+    # print('log_softmax: ', F.log_softmax(x, dim = -1))
