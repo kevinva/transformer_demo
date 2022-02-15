@@ -22,4 +22,4 @@ class EncoderLayer(nn.Module):
         # shape is same (30, 10, 512) -> SublayerConnection 
         # -> (30, 10, 512)
         return self.sublayer[1](x, self.feed_forward)
-        # x 和feed_forward对象一起，给第二个SublayerConnection
+        # x 和feed_forward对象一起，给第二个SublayerConnection  
